@@ -45,7 +45,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-py-modules = ["adafruit_icm20x"]
+py-modules = ["adafruit_icm20x", "iim4xxxx"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
