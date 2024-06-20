@@ -241,7 +241,7 @@ class IIM42652:  # pylint:disable=too-many-instance-attributes
         raw_temp_data = self._raw_temp_data
         sleep(0.005)
 
-        temp = (raw_temp_data / TEMP_LSB_PER_DEGC) + TEMP_OFFSET
+        temp = (raw_temp_data[0] / TEMP_LSB_PER_DEGC) + TEMP_OFFSET
 
         return temp
 
